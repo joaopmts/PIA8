@@ -13,7 +13,7 @@ import model.Pais;
 import service.PaisService;
 
 @WebServlet("/ManterPais.do")
-public class manterPaisController extends HttpServlet {
+public class ManterPaisController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	long populacao = 0;
 	double area =  0;
