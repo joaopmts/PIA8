@@ -14,6 +14,31 @@
         </head>
 
         <body>
+        		
+        		<!-- Modal -->
+	<div class="modal fade" id="delete-modal" tabindex="-
+1" role="dialog"
+		aria-labelledby="modalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data- dismiss="modal"aria-label="Fechar">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal- title" id="modalLabel">Excluir Pais</h4>
+				</div>
+				<div class="modal-body">Deseja realmente excluir este Pais?</div>
+				<div class="modal-footer">
+					<form action="ManterPais.do" method="post">
+						<input type="hidden" name="id" id="id_excluir"/>
+						<button type="submit" class="btn btn-primary" name="acao"value="Excluir">Sim</button>
+						<button type="button" class="btn btn-default"data-dismiss="modal">N&atilde;o</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.modal -->
                
                 <!-- Barra superior com os menus de navegação -->
 				<c:import url="Menu.jsp"/>
